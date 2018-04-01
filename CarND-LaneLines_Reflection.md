@@ -14,6 +14,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image001]: ./images_output/image001.png "image001"
 
 ---
 
@@ -41,6 +42,8 @@ Define a region of interest
 Define a Hough lines transformation (utlizing the draw_lines() function)
 
 Overlay (annotate) images with superimposed lines
+
+![alt text][image001]
 
 Within the hough_lines() function, draw_lines() function was used, which drew lines on the right and left of the lanes. This required found lines to be sorted into right and left lists, based on their slope (negative or positive respecitvley). The mean was then computed for the slopes and x,y points of the lines. From this information, the annotation lines could be oriented and defined so as to coincide with the found lanes.
 
