@@ -33,9 +33,13 @@ If you'd like to include images to show how the pipeline works, here is how to i
 The pipeline inculded:
 
 Convert to grayscale and apply Gaussian Blur
+
 Apply Canny transformation
+
 Define a region of interest
+
 Define a Hough lines transformation (utlizing the draw_lines() function)
+
 Overlay (annotate) images with superimposed lines
 
 Within the hough_lines() function, draw_lines() function was used, which drew lines on the right and left of the lanes. This required found lines to be sorted into right and left lists, based on their slope (negative or positive respecitvley). The mean was then computed for the slopes and x,y points of the lines. From this information, the annotation lines could be oriented and defined so as to coincide with the found lanes.
