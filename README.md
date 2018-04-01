@@ -23,6 +23,8 @@ For this project, a great writeup should provide a detailed response to the "Ref
 
 2. Identify any shortcomings
 
+There were issues with Nan being reported, which turned out to be the case when a slope, m = 0 was calculated. This caused the pipeline to fail, but principly was only an issue on the second video. There were some options to address this, one to find the segments of m = 0, or to tune the parameters for the lines from the Hough Lines function. I worked with parameter tuning, since it seemed that this would be the root of the problem. Parameter tuning worked well to avoid the Nan problem, although there are parts of the video with lines moving too much with slope deviations from the real lane lines.
+
 3. Suggest possible improvements
 
 We encourage using images in your writeup to demonstrate how your pipeline works.  
